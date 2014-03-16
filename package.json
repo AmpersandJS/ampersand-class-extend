@@ -1,0 +1,27 @@
+{
+  "name": "ampersand-class-extend",
+  "version": "0.0.0",
+  "description": "JS class extension tool for enabling easily extending prototype with multiple objects.",
+  "main": "ampersand-class-extend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ampersandjs/ampersand-class-extend"
+  },
+  "keywords": [
+    "ampersand",
+    "inheritance",
+    "class"
+  ],
+  "author": "Henrik Joreteg <henrik@andyet.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ampersandjs/ampersand-class-extend/issues"
+  },
+  "homepage": "https://github.com/ampersandjs/ampersand-class-extend",
+  "dependencies": {
+    "extend-object": "0.x.x"
+  }
+}
