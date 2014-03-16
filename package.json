@@ -1,6 +1,6 @@
 {
   "name": "ampersand-class-extend",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "JS class extension tool for enabling easily extending prototype with multiple objects.",
   "main": "ampersand-class-extend.js",
   "scripts": {
