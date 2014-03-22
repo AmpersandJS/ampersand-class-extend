@@ -4,7 +4,7 @@
   "description": "JS class extension tool for enabling easily extending prototype with multiple objects.",
   "main": "ampersand-class-extend.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/main.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,20 @@
   },
   "homepage": "https://github.com/ampersandjs/ampersand-class-extend",
   "dependencies": {
-    "extend-object": "0.x.x"
+    "extend-object": "0.x.x",
+    "tape": "~2.11.0"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/5.1..latest",
+      "opera/11.0..latest",
+      "iphone/6..latest",
+      "ipad/6..latest",
+      "android-browser/latest"
+    ]
   }
 }
