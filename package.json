@@ -10,7 +10,7 @@
     "extend-object": "0.x.x"
   },
   "devDependencies": {
-    "tape": "~2.11.0"
+    "tape": "~2.12.3"
   },
   "homepage": "https://github.com/ampersandjs/ampersand-class-extend",
   "keywords": [
