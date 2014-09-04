@@ -10,7 +10,11 @@
     "extend-object": "^1.0.0"
   },
   "devDependencies": {
-    "tape": "~2.12.3"
+    "browserify": "^5.11.0",
+    "phantomjs": "^1.9.7-15",
+    "tap-spec": "^0.2.1",
+    "tape": "~2.12.3",
+    "tape-run": "^0.3.0"
   },
   "homepage": "https://github.com/ampersandjs/ampersand-class-extend",
   "keywords": [
@@ -25,7 +29,7 @@
     "url": "git://github.com/ampersandjs/ampersand-class-extend"
   },
   "scripts": {
-    "test": "node test/main.js"
+    "test": "browserify test/main.js | tape-run | tap-spec"
   },
   "testling": {
     "files": "test/*.js",
