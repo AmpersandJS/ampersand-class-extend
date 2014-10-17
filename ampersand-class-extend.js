@@ -1,4 +1,4 @@
-var objectExtend = require('extend-object');
+var objectExtend = require('object-assign');
 
 
 /// Following code is largely pasted from Backbone.js
