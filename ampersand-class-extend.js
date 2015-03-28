@@ -1,5 +1,4 @@
-var objectExtend = require('extend-object');
-
+var assign = require('lodash.assign');
 
 /// Following code is largely pasted from Backbone.js
 
@@ -23,7 +22,7 @@ var extend = function(protoProps) {
     }
 
     // Add static properties to the constructor function from parent
-    objectExtend(child, parent);
+    assign(child, parent);
 
     // Set the prototype chain to inherit from `parent`, without calling
     // `parent`'s constructor function.
@@ -34,7 +33,7 @@ var extend = function(protoProps) {
     // Mix in all prototype properties to the subclass if supplied.
     if (protoProps) {
         args.unshift(child.prototype);
-        objectExtend.apply(null, args);
+        assign.apply(null, args);
     }
 
     // Set a convenience property in case the parent's prototype is needed
