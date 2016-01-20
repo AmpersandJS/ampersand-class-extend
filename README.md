@@ -4,11 +4,6 @@ Helper function for setting up prototype chains for subclasses.
 
 Largely copied out of Backbone, but modified to enable extending a prototype with multiple mixins at once.
 
-## browser support
-
-[![browser support](https://ci.testling.com/ampersandjs/ampersand-class-extend.png)
-](https://ci.testling.com/ampersandjs/ampersand-class-extend)
-
 ## install
 
 ```
