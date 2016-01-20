@@ -13,14 +13,6 @@
   "dependencies": {
     "lodash.assign": "^3.0.0"
   },
-  "devDependencies": {
-    "browserify": "^5.11.0",
-    "phantomjs": "^1.9.7-15",
-    "run-browser": "^1.3.1",
-    "tap-spec": "^0.2.1",
-    "tape": "~2.12.3",
-    "tape-run": "^0.3.0"
-  },
   "homepage": "https://github.com/ampersandjs/ampersand-class-extend",
   "keywords": [
     "ampersand",
@@ -34,23 +26,13 @@
     "url": "git://github.com/ampersandjs/ampersand-class-extend"
   },
   "scripts": {
-    "start": "run-browser test/main.js",
-    "test": "browserify test/main.js | tape-run | tap-spec"
+    "start": "zuul --local -- test/main.js",
+    "test": "zuul --phantom -- test/main.js",
+    "test-ci": "zuul -- test/main.js"
   },
-  "testling": {
-    "files": "test/*.js",
-    "browsers": [
-      "ie/9..latest",
-      "firefox/17..latest",
-      "firefox/nightly",
-      "chrome/22..latest",
-      "chrome/canary",
-      "opera/12..latest",
-      "opera/next",
-      "safari/5.1..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest",
-      "android-browser/4.2..latest"
-    ]
+  "devDependencies": {
+    "phantomjs": "^1.9.19",
+    "tape": "^4.4.0",
+    "zuul": "^3.9.0"
   }
 }
