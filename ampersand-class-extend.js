@@ -1,4 +1,4 @@
-var assign = require('lodash.assign');
+var assign = require('lodash/assign');
 
 /// Following code is largely pasted from Backbone.js
 
